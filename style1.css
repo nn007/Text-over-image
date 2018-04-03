@@ -1,0 +1,88 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.parallax1{
+	background-image: url('image.jpg');
+	height: 100vh;
+	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.navbar{
+	position: absolute;
+	width: 100%;/*---set the a full width to play with it*/
+	background: white;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;	
+	overflow: hidden;
+}
+ul>li{
+	display:inline;
+	margin: 0 210px;
+}
+@media screen only (max-width: 500px){
+	/*how can I make the navbar to be resonsive???*/
+}
+
+.parallax2{
+	background-image: url('image2.jpg');
+	height: 100vh;
+	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.txt{
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;	
+}
+@media screen and (max-width: 500px){
+	.txt{
+		font-size: 20px;
+	}
+}
+
+.info{
+	display: flex;
+	max-width: 800px;
+	margin: 0 auto ;
+}
+@media screen and (max-width: 500px){
+	.info{
+		display: flex;
+		flex-direction: column;
+		background: black;
+	}
+}
+.info>a>p{
+	background: honeydew;
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 10px;
+	
+}
+
+a>p{
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+	background: #eee;
+
+
+}
